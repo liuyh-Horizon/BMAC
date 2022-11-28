@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 28 19:30:59 2022
+# Process ID: 70575
+# Current directory: /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.sim/sim_1/behav/xsim/xsim.dir/BMAC_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.sim/sim_1/behav/xsim/xsim.dir/BMAC_tb_behav/webtalk/xsim_webtalk.tcl -notrace

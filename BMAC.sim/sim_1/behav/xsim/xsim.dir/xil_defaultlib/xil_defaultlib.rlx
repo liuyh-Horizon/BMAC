@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/yuhaoliu/Projects/Verilog/BMAC/BMAC.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/home/yuhaoliu/Projects/Verilog/BMAC/src/code/BMAC.v,1669660354,verilog,,/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Lookup_table.v,,BMAC,,,,,,,,
+/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Lookup_table.v,1669657222,verilog,,/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Popcount_bin.v,,Lookup_table,,,,,,,,
+/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Popcount_bin.v,1669658383,verilog,,/home/yuhaoliu/Projects/Verilog/BMAC/src/code/XNOR_bin.v,,Popcount_bin,,,,,,,,
+/home/yuhaoliu/Projects/Verilog/BMAC/src/code/XNOR_bin.v,1669648702,verilog,,/home/yuhaoliu/Projects/Verilog/BMAC/src/sim/BMAC_tb.v,,XNOR_bin,,,,,,,,
+/home/yuhaoliu/Projects/Verilog/BMAC/src/sim/BMAC_tb.v,1669660236,verilog,,,,BMAC_tb,,,,,,,,

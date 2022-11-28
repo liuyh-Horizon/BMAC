@@ -1,0 +1,221 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 28 19:33:29 2022
+# Process ID: 71702
+# Current directory: /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.runs/synth_1
+# Command line: vivado -log BMAC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BMAC.tcl
+# Log file: /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.runs/synth_1/BMAC.vds
+# Journal file: /home/yuhaoliu/Projects/Verilog/BMAC/BMAC.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source BMAC.tcl -notrace
+Command: synth_design -top BMAC -part xczu3eg-sbva484-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 71772
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2419.188 ; gain = 0.000 ; free physical = 1274 ; free virtual = 24379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BMAC' [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/BMAC.v:23]
+	Parameter IN_WIDTH bound to: 32 - type: integer 
+	Parameter LUT_WIDTH bound to: 8 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'XNOR_bin' [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/XNOR_bin.v:22]
+	Parameter IN_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'XNOR_bin' (1#1) [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/XNOR_bin.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Popcount_bin' [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Popcount_bin.v:23]
+	Parameter IN_WIDTH bound to: 32 - type: integer 
+	Parameter LUT_WIDTH bound to: 8 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lookup_table' [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Lookup_table.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Lookup_table' (2#1) [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Lookup_table.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Popcount_bin' (3#1) [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Popcount_bin.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BMAC' (4#1) [/home/yuhaoliu/Projects/Verilog/BMAC/src/code/BMAC.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2419.188 ; gain = 0.000 ; free physical = 1289 ; free virtual = 24391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2419.188 ; gain = 0.000 ; free physical = 2015 ; free virtual = 25117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2427.117 ; gain = 7.930 ; free physical = 2008 ; free virtual = 25110
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2427.117 ; gain = 7.930 ; free physical = 1973 ; free virtual = 25075
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1403 ; free virtual = 24508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-------------+--------------------------------------+---------------+----------------+
+|Module Name  | RTL Object                           | Depth x Width | Implemented As | 
++-------------+--------------------------------------+---------------+----------------+
+|Lookup_table | pop_tab                              | 256x4         | LUT            | 
+|BMAC         | Popcount_bin/genblk2[1].LUTs/pop_tab | 256x4         | LUT            | 
+|BMAC         | Popcount_bin/genblk2[2].LUTs/pop_tab | 256x4         | LUT            | 
+|BMAC         | Popcount_bin/genblk2[3].LUTs/pop_tab | 256x4         | LUT            | 
+|BMAC         | Popcount_bin/genblk2[0].LUTs/pop_tab | 256x4         | LUT            | 
++-------------+--------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1402 ; free virtual = 24507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1402 ; free virtual = 24507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    32|
+|2     |LUT3 |     4|
+|3     |LUT4 |    10|
+|4     |LUT5 |     2|
+|5     |LUT6 |    36|
+|6     |IBUF |    64|
+|7     |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------+---------------+------+
+|      |Instance              |Module         |Cells |
++------+----------------------+---------------+------+
+|1     |top                   |               |   164|
+|2     |  Popcount_bin        |Popcount_bin   |    50|
+|3     |    \genblk2[0].LUTs  |Lookup_table   |    10|
+|4     |    \genblk2[1].LUTs  |Lookup_table_0 |    10|
+|5     |    \genblk2[2].LUTs  |Lookup_table_1 |    10|
+|6     |    \genblk2[3].LUTs  |Lookup_table_2 |    10|
+|7     |  XNOR_bin            |XNOR_bin       |    34|
++------+----------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1401 ; free virtual = 24506
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.516 ; gain = 440.328 ; free physical = 1402 ; free virtual = 24507
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.523 ; gain = 440.328 ; free physical = 1402 ; free virtual = 24507
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2859.754 ; gain = 0.000 ; free physical = 1499 ; free virtual = 24604
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.691 ; gain = 0.000 ; free physical = 1418 ; free virtual = 24523
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2883.691 ; gain = 464.578 ; free physical = 1555 ; free virtual = 24660
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/BMAC/BMAC.runs/synth_1/BMAC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BMAC_utilization_synth.rpt -pb BMAC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 28 19:34:08 2022...

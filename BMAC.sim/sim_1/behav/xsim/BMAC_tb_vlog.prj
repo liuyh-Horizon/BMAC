@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../src/code/BMAC.v" \
+"../../../../src/code/Lookup_table.v" \
+"../../../../src/code/Popcount_bin.v" \
+"../../../../src/code/XNOR_bin.v" \
+"../../../../src/sim/BMAC_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

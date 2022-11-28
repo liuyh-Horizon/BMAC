@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/BMAC/src/code/BMAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BMAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Lookup_table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lookup_table
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/BMAC/src/code/Popcount_bin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Popcount_bin
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/BMAC/src/code/XNOR_bin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XNOR_bin
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/BMAC/src/sim/BMAC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BMAC_tb
