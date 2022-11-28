@@ -35,7 +35,8 @@ parameter OUTPUT_WIDTH=16;
 
     wire    [(OUTPUT_WIDTH-1):0]   bmac_out;
 
-BMAC BMAC
+BMAC #(.IN_WIDTH(IN_WIDTH), .LUT_WIDTH(LUT_WIDTH), .OUTPUT_WIDTH(OUTPUT_WIDTH)) 
+BMAC
 (
     .bmac_in_0(bmac_in_0),
     .bmac_in_1(bmac_in_1),

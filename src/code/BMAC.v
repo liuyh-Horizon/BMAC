@@ -39,14 +39,16 @@ module BMAC
 
 wire     [(IN_WIDTH-1):0]       xnor_out;
 
-XNOR_bin XNOR_bin
+XNOR_bin  #(.IN_WIDTH(IN_WIDTH)) 
+XNOR_bin
 (
     .xnor_in_0(bmac_in_0),
     .xnor_in_1(bmac_in_1),
     .xnor_out(xnor_out)
 );
 
-Popcount_bin Popcount_bin
+Popcount_bin #(.IN_WIDTH(IN_WIDTH), .LUT_WIDTH(LUT_WIDTH), .OUTPUT_WIDTH(OUTPUT_WIDTH)) 
+Popcount_bin
 (
     .pop_in(xnor_out),
     .pop_out(bmac_out)
